@@ -38,6 +38,7 @@ $headersResponse = [
 // --- Clases: cada subcarpeta es una clase --------------------------------
 $descripciones = [
     'clase1' => 'HTTP: métodos, headers y códigos de estado',
+    'html'   => 'Ejercicios: lista, tabla y formulario',
 ];
 
 $clases = [];

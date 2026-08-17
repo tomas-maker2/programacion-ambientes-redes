@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas sobre HTTP - Clase 1</title>
+</head>
+<body>
+
+    <h1>Preguntas sobre HTTP</h1>
+    <p>Ejercicio 1 - Programación en Ambientes de Redes</p>
+
+    <ul>
+
+        <li>
+            <strong>1) ¿Sobre qué protocolo binario está montado el protocolo HTTP?</strong>
+            <p>HTTP en sus versiones 1.x no está montado sobre un protocolo binario, sino sobre TCP, que es un protocolo de transporte. HTTP/2 sí es binario, y HTTP/3 está montado sobre QUIC, que a su vez usa UDP.</p>
+        </li>
+
+        <li>
+            <strong>2) ¿Cuáles son los clientes HTTP y los servidores HTTP más utilizados?</strong>
+            <p>Como clientes: los navegadores, CURL y las librerías nativas de los distintos lenguajes de desarrollo. Como servidores: los web servers en general, siendo Apache el ejemplo más común.</p>
+        </li>
+
+        <li>
+            <strong>3) ¿Qué verbos admite un comando en el requerimiento HTTP?</strong>
+            <p>GET para lectura, PUT para crear recursos, DELETE para borrarlos y POST para actualizarlos. También existen otros como HEAD y OPTIONS.</p>
+        </li>
+
+        <li>
+            <strong>4) ¿Qué contenido lleva el body de un requerimiento HTTP?</strong>
+            <p>Puede llevar datos en cualquier formato: los campos cargados en un formulario, archivos enviados en un proceso de upload, texto plano, JSON, XML o contenido binario.</p>
+        </li>
+
+        <li>
+            <strong>5) ¿Qué diferencia existe entre un URL y un URI?</strong>
+            <p>Un URI es un identificador genérico de un recurso. Un URL es un tipo de URI que además indica cómo localizarlo, por ejemplo http://dominio/recurso. En la práctica se usa el término URI para la parte que va después del host y el puerto, como /index.html o /clientes.</p>
+        </li>
+
+        <li>
+            <strong>6) ¿Cómo se almacena información relacionada con las respuestas HTTP?</strong>
+            <p>Principalmente a través de los headers, como Set-Cookie, Cache-Control y ETag. También mediante cookies, que el servidor manda con Set-Cookie y el navegador guarda para reenviarlas, en el body de la respuesta y en la caché del navegador.</p>
+        </li>
+
+        <li>
+            <strong>7) ¿Qué significa HTTP sobre conexiones preexistentes?</strong>
+            <p>Significa reutilizar una misma conexión TCP para múltiples transacciones HTTP, lo que en HTTP 1.1 se llama conexiones persistentes. El header Connection: Keep-Alive es el que pide mantener la conexión abierta mientras sea posible.</p>
+        </li>
+
+        <li>
+            <strong>8) ¿Qué significa Virtual Hosting?</strong>
+            <p>Es la capacidad de un servidor web de atender múltiples dominios sobre una única IP. Para eso se usa el header Host del requerimiento, que le indica al servidor a qué dominio se le está pidiendo el recurso. Se puede simular localmente con el archivo hosts de Windows.</p>
+        </li>
+
+        <li>
+            <strong>9) ¿Qué significa Cache por ETag?</strong>
+            <p>Es un mecanismo de caché que usa un identificador único, o fingerprint, asociado a cada recurso del servidor. El cliente manda ese ETag en el header If-None-Match y, si el recurso no cambió, el servidor responde Not Modified y el navegador carga desde su caché. Es más confiable que usar fechas porque no depende de la configuración horaria.</p>
+        </li>
+
+        <li>
+            <strong>10) ¿Por qué el HTTP se considera STATELESS?</strong>
+            <p>Porque cada requerimiento es independiente y el servidor no guarda estado entre una petición y la siguiente. Al cerrarse la conexión, cualquier aplicación pierde el estado, por lo que hay que recuperarlo por otros medios como cookies o sesiones.</p>
+        </li>
+
+        <li>
+            <strong>11) ¿Qué nueva versión de HTTP se está usando para mejorar la velocidad de la WEB?</strong>
+            <p>HTTP/2, desde 2015, que mejora la velocidad con multiplexación y compresión de cabeceras. Y HTTP/3, desde 2019, que mejora todavía más la velocidad de establecimiento de conexión usando QUIC sobre UDP.</p>
+        </li>
+
+        <li>
+            <strong>12) ¿Cómo va a mejorar el comportamiento de una aplicación WEB en ambientes ruidosos o de débil conexión?</strong>
+            <p>Con HTTP/3 sobre QUIC, que permite reconectar de inmediato ante una caída y funciona mejor en zonas con mucho ruido, exceso de tráfico o baja cobertura, como industrias, aeropuertos o lugares alejados de las ciudades. QUIC arma conexiones UDP más cortas y eficientes, y transporta mensajes multiplexados de manera independiente, lo que reduce el bloqueo cuando se pierde un paquete.</p>
+        </li>
+
+    </ul>
+
+    <hr>
+
+    <p><a href="index.html">Volver a los ejercicios</a></p>
+
+</body>
+</html>
