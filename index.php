@@ -39,6 +39,7 @@ $headersResponse = [
 $descripciones = [
     'clase1' => 'HTTP: métodos, headers y códigos de estado',
     'html'   => 'Ejercicios: lista, tabla y formulario',
+    'css'    => 'Ejercicio de CSS: formulario con estilos',
 ];
 
 $clases = [];

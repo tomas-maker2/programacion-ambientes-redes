@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 15px 0;
+}
+
+.campo label {
+    flex-basis: 170px;
+    flex-shrink: 0;
+}
+
+.campo input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+.campo input:focus {
+    border-color: #336699;
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.botones button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #336699;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #274e78;
+}
+
+hr {
+    margin-top: 30px;
+    border: none;
+    border-top: 1px solid #cccccc;
+}
