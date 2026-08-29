@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla responsiva - Clase 1</title>
+    <link rel="stylesheet" href="tabla.css">
+</head>
+<body>
+
+    <h1>Tabla responsiva</h1>
+    <p>Ejercicio de CSS - Programación en Ambientes de Redes</p>
+
+    <div class="contenedor">
+
+        <table>
+
+            <caption>Códigos de estado de una respuesta HTTP</caption>
+
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Qué significa</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>200</td>
+                    <td>OK</td>
+                    <td>Éxito</td>
+                    <td>El pedido salió bien y el recurso viaja en el body.</td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>Moved Permanently</td>
+                    <td>Redirección</td>
+                    <td>El recurso cambió de dirección para siempre. La nueva va en el header Location.</td>
+                </tr>
+                <tr>
+                    <td>304</td>
+                    <td>Not Modified</td>
+                    <td>Redirección</td>
+                    <td>No cambió desde la última vez. El navegador usa lo que tiene en caché.</td>
+                </tr>
+                <tr>
+                    <td>404</td>
+                    <td>Not Found</td>
+                    <td>Error del cliente</td>
+                    <td>La URI pedida no existe en el servidor.</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>Internal Server Error</td>
+                    <td>Error del servidor</td>
+                    <td>Se rompió algo del lado del servidor procesando el pedido.</td>
+                </tr>
+                <tr>
+                    <td>503</td>
+                    <td>Service Unavailable</td>
+                    <td>Error del servidor</td>
+                    <td>El servidor está caído o saturado, pero de forma temporal.</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <hr>
+
+    <p><a href="../">Volver al índice</a></p>
+
+</body>
+</html>
