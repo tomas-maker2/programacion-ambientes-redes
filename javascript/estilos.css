@@ -1,0 +1,141 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 25px 40px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+h1 {
+    margin: 0 0 5px 0;
+}
+
+fieldset {
+    border: 1px solid #d9d9d9;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px;
+    margin: 0;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.campo input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+}
+
+.campo input:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+#verClave {
+    margin-top: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    background-color: #ffffff;
+    border: 1px solid #2e7d32;
+    color: #2e7d32;
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+}
+
+.botones button {
+    flex: 0 1 auto;
+    padding: 12px 30px;
+    border: none;
+    background-color: #2e7d32;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #1f5722;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado ul {
+    padding-left: 20px;
+}
+
+hr {
+    margin-top: 30px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    .campos {
+        gap: 15px;
+    }
+
+    .campo {
+        flex: 1 1 45%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    .campo {
+        flex: 1 1 100%;
+    }
+
+    .botones button {
+        flex: 1 1 100%;
+    }
+
+}

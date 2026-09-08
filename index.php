@@ -41,6 +41,7 @@ $descripciones = [
     'html'   => 'Ejercicios: lista, tabla y formulario',
     'css'    => 'Ejercicio de CSS: formulario con estilos',
     'css2'   => 'Ejercicio de CSS: formulario responsivo con media queries',
+    'javascript' => 'Ejercicio de JavaScript: formulario interactivo',
 ];
 
 $clases = [];
