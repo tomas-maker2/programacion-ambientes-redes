@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas - Clase 1</title>
+    <link rel="stylesheet" href="personas.css">
+</head>
+<body>
+
+    <h1>Registro de personas</h1>
+    <p>Ejercicio de JavaScript - Programación en Ambientes de Redes</p>
+
+    <form id="formPersona">
+
+        <p class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p class="campo">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </p>
+
+        <p class="campo">
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </p>
+
+        <p class="botones">
+            <button type="button" id="btnCrear">Crear persona</button>
+            <button type="button" id="btnListar">Listar personas</button>
+            <button type="button" id="btnOcultar">Ocultar presentación</button>
+        </p>
+
+    </form>
+
+    <div id="contenedorPersonas" class="oculto"></div>
+
+    <script src="personas.js" defer></script>
+
+</body>
+</html>
