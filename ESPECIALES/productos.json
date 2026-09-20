@@ -1,0 +1,8 @@
+[
+    { "id": 1, "nombre": "Notebook 15 pulgadas", "categoria": "Electrónica", "precio": 850000 },
+    { "id": 2, "nombre": "Mouse inalámbrico", "categoria": "Electrónica", "precio": 18500 },
+    { "id": 3, "nombre": "Silla de escritorio", "categoria": "Hogar", "precio": 120000 },
+    { "id": 4, "nombre": "Cuaderno A4", "categoria": "Librería", "precio": 3200 },
+    { "id": 5, "nombre": "Pelota de fútbol", "categoria": "Deportes", "precio": 24000 },
+    { "id": 6, "nombre": "Lámpara de mesa", "categoria": "Hogar", "precio": 15800 }
+]

@@ -1,0 +1,7 @@
+[
+    { "id": 1, "nombre": "Electrónica" },
+    { "id": 2, "nombre": "Hogar" },
+    { "id": 3, "nombre": "Librería" },
+    { "id": 4, "nombre": "Deportes" },
+    { "id": 5, "nombre": "Juguetes" }
+]

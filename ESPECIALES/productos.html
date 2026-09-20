@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Clase 1</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+    <h1>Productos</h1>
+    <p>Ejercicio de JSON - Programación en Ambientes de Redes</p>
+
+    <button type="button" id="btnAgregar">Agregar producto</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+
+    <div id="modal" class="oculto">
+        <form id="formProducto">
+            <h2>Agregar producto</h2>
+
+            <p class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p class="campo">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria" required></select>
+            </p>
+
+            <p class="campo">
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" min="0" required>
+            </p>
+
+            <p class="botones">
+                <button type="submit">Guardar</button>
+                <button type="button" id="btnCancelar">Cancelar</button>
+            </p>
+        </form>
+    </div>
+
+    <script type="module" src="productos.js"></script>
+
+</body>
+</html>
