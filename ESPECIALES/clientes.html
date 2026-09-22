@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - Clase 1</title>
+    <link rel="stylesheet" href="clientes.css">
+</head>
+<body>
+
+    <h1>Clientes</h1>
+    <p>Ejercicio de JSON - Programación en Ambientes de Redes</p>
+
+    <button type="button" id="btnAgregar">Agregar cliente</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cod. Cliente</th>
+                <th>Razón Social</th>
+                <th>CUIT</th>
+                <th>Condición IVA</th>
+                <th>Fecha de inicio</th>
+                <th>Saldo cta. cte.</th>
+                <th>Último balance</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+
+    <div id="modal" class="oculto">
+        <form id="formCliente">
+            <h2>Agregar cliente</h2>
+
+            <p class="campo">
+                <label for="codCliente">Cod. Cliente</label>
+                <input type="text" id="codCliente" name="codCliente" required>
+            </p>
+
+            <p class="campo">
+                <label for="razonSocial">Razón Social</label>
+                <input type="text" id="razonSocial" name="razonSocial" required>
+            </p>
+
+            <p class="campo">
+                <label for="cuit">CUIT</label>
+                <input type="text" id="cuit" name="cuit" pattern="[0-9]{2}-[0-9]{8}-[0-9]{1}" title="Formato: 30-12345678-9" placeholder="30-12345678-9" required>
+            </p>
+
+            <p class="campo">
+                <label for="condicionIva">Condición IVA</label>
+                <select id="condicionIva" name="condicionIva" required></select>
+            </p>
+
+            <p class="campo">
+                <label for="fechaInicio">Fecha de inicio</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+            </p>
+
+            <p class="campo">
+                <label for="saldoCuentaCorriente">Saldo cuenta corriente</label>
+                <input type="number" id="saldoCuentaCorriente" name="saldoCuentaCorriente" step="0.01" required>
+            </p>
+
+            <p class="campo">
+                <label for="ultimoBalance">Último balance</label>
+                <input type="number" id="ultimoBalance" name="ultimoBalance" step="0.01" required>
+            </p>
+
+            <p class="botones">
+                <button type="submit">Guardar</button>
+                <button type="button" id="btnCancelar">Cancelar</button>
+            </p>
+        </form>
+    </div>
+
+    <script type="module" src="clientes.js"></script>
+
+</body>
+</html>

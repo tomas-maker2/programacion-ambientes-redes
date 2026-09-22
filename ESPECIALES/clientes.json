@@ -1,0 +1,6 @@
+[
+    { "codCliente": "C001", "razonSocial": "Distribuidora del Sur SA", "cuit": "30-71234567-9", "condicionIva": "IVA General (21%)", "fechaInicio": "2021-03-15", "saldoCuentaCorriente": 45000, "ultimoBalance": 128000 },
+    { "codCliente": "C002", "razonSocial": "Comercial Bolotnicoff SRL", "cuit": "30-70123456-4", "condicionIva": "IVA Reducido (10.5%)", "fechaInicio": "2019-07-01", "saldoCuentaCorriente": 0, "ultimoBalance": 76500 },
+    { "codCliente": "C003", "razonSocial": "Juan Pérez", "cuit": "20-25874196-3", "condicionIva": "Exento", "fechaInicio": "2022-11-20", "saldoCuentaCorriente": -12300, "ultimoBalance": 5400 },
+    { "codCliente": "C004", "razonSocial": "Importadora Norte SA", "cuit": "30-68541239-7", "condicionIva": "IVA Aumentado (27%)", "fechaInicio": "2023-01-10", "saldoCuentaCorriente": 89000, "ultimoBalance": 210000 }
+]

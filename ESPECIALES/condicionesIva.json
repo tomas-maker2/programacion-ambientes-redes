@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nombre": "IVA General (21%)" },
+    { "id": 2, "nombre": "IVA Reducido (10.5%)" },
+    { "id": 3, "nombre": "IVA Aumentado (27%)" },
+    { "id": 4, "nombre": "Exento" }
+]
