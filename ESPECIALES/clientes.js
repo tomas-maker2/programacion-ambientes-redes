@@ -39,6 +39,27 @@ condicionesIva.forEach(function (condicion) {
     selectCondicionIva.appendChild(opcion);
 });
 
+// Validación en vivo: se revisa cada campo mientras se escribe, no recién al guardar
+const campos = formulario.querySelectorAll('input, select');
+
+campos.forEach(function (campo) {
+    campo.addEventListener('input', function () {
+        validarCampo(campo);
+    });
+});
+
+function validarCampo(campo) {
+    const mensaje = document.getElementById('mensaje-' + campo.id);
+
+    if (campo.checkValidity()) {
+        campo.classList.remove('invalido');
+        mensaje.textContent = '';
+    } else {
+        campo.classList.add('invalido');
+        mensaje.textContent = campo.validationMessage;
+    }
+}
+
 document.getElementById('btnAgregar').addEventListener('click', function () {
     modal.classList.remove('oculto');
 });
@@ -49,6 +70,14 @@ document.getElementById('btnCancelar').addEventListener('click', function () {
 
 formulario.addEventListener('submit', function (evento) {
     evento.preventDefault();
+
+    campos.forEach(function (campo) {
+        validarCampo(campo);
+    });
+
+    if (!formulario.checkValidity()) {
+        return;
+    }
 
     const nuevo = {
         codCliente: document.getElementById('codCliente').value,
