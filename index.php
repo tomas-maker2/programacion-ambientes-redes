@@ -27,6 +27,12 @@ $ejercicios = [
         ['href' => 'ESPECIALES/productos.html', 'label' => 'Ejercicio 1: JSON, tabla y modal de productos'],
         ['href' => 'ESPECIALES/clientes.html', 'label' => 'Ejercicio 2: JSON, tabla y modal de clientes'],
     ],
+    'PHP' => [
+        ['href' => 'php/01info/', 'label' => 'Ejercicio 1: fecha, hora y phpinfo()'],
+        ['href' => 'php/phpBase/', 'label' => 'Ejercicio 2: variables y tipos de dato'],
+        ['href' => 'php/phpInclude/', 'label' => 'Ejercicio 3: include() entre archivos'],
+        ['href' => 'php/phpVariableServidor/', 'label' => 'Ejercicio 4: variables de $_SERVER'],
+    ],
 ];
 ?>
 <!DOCTYPE html>
