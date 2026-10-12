@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con y sin AJAX</title>
+</head>
+<body>
+
+    <h1>Datos de una persona</h1>
+
+    <form id="formulario" method="POST" action="respuesta.php">
+
+        <label for="usuario">Código de usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <button type="submit">Enviar de forma tradicional</button>
+        <button type="button" id="btnAjax">Enviar con AJAX</button>
+
+    </form>
+
+    <script>
+        document.getElementById('btnAjax').addEventListener('click', function () {
+            const formulario = document.getElementById('formulario');
+            const datos = new FormData(formulario);
+
+            fetch('respuesta.php', {
+                method: 'POST',
+                body: datos
+            })
+                .then(function (respuesta) {
+                    return respuesta.json();
+                })
+                .then(function (json) {
+                    alert(JSON.stringify(json));
+                });
+        });
+    </script>
+
+</body>
+</html>

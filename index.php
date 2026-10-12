@@ -33,6 +33,11 @@ $ejercicios = [
         ['href' => 'php/phpInclude/', 'label' => 'Ejercicio 3: include() entre archivos'],
         ['href' => 'php/phpVariableServidor/', 'label' => 'Ejercicio 4: variables de $_SERVER'],
     ],
+    'AJAX' => [
+        ['href' => 'php/ajax/formToEncipt/', 'label' => 'Ejercicio 1: encriptar clave con fetch'],
+        ['href' => 'php/ajax/formToEncriptAsync/', 'label' => 'Ejercicio 2: encriptar con demora y estado'],
+        ['href' => 'php/ajax/ajastoJsonApiFetch/', 'label' => 'Ejercicio 3: envío tradicional vs AJAX'],
+    ],
 ];
 ?>
 <!DOCTYPE html>
