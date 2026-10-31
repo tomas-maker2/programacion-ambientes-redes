@@ -38,6 +38,9 @@ $ejercicios = [
         ['href' => 'php/ajax/formToEncriptAsync/', 'label' => 'Ejercicio 2: encriptar con demora y estado'],
         ['href' => 'php/ajax/ajastoJsonApiFetch/', 'label' => 'Ejercicio 3: envío tradicional vs AJAX'],
     ],
+    'TP Final' => [
+        ['href' => 'tpFinal/', 'label' => 'ABM de clientes con MySQL, sesión y archivos adjuntos'],
+    ],
 ];
 ?>
 <!DOCTYPE html>
