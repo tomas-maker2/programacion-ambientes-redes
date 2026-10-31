@@ -1,0 +1,117 @@
+// Variables: misma paleta que clientes.scss, para que se vea consistente
+$color-primario: #2e7d32;
+$color-primario-hover: #1f5722;
+$color-fondo: #f4f4f4;
+$color-texto: #1a1a1a;
+$color-texto-suave: #555555;
+$color-borde: #bbbbbb;
+$color-error: #c62828;
+$fuente: "Segoe UI", Arial, sans-serif;
+
+body {
+    font-family: $fuente;
+    background-color: $color-fondo;
+    color: $color-texto;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-sesion {
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        margin: 0 0 5px 0;
+        color: $color-primario;
+    }
+
+    p.subtitulo {
+        margin: 0 0 20px 0;
+        color: $color-texto-suave;
+        font-size: 14px;
+    }
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    label {
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: $color-texto-suave;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid $color-borde;
+        border-radius: 4px;
+        font-size: 15px;
+    }
+}
+
+.mensaje-formulario {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #fdecea;
+    color: $color-error;
+    font-size: 14px;
+
+    &.oculto {
+        display: none;
+    }
+}
+
+.datos-sesion {
+    margin-bottom: 20px;
+
+    p {
+        margin: 6px 0;
+        font-size: 14px;
+
+        strong {
+            color: $color-texto-suave;
+        }
+    }
+}
+
+button,
+a.boton {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: $color-primario;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primario-hover;
+    }
+
+    &.secundario {
+        background-color: transparent;
+        color: $color-texto-suave;
+        border: 1px solid $color-borde;
+
+        &:hover {
+            background-color: #eeeeee;
+        }
+    }
+}

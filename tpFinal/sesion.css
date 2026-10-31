@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-sesion {
+  width: 350px;
+  max-width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.caja-sesion h1 {
+  margin: 0 0 5px 0;
+  color: #2e7d32;
+}
+.caja-sesion p.subtitulo {
+  margin: 0 0 20px 0;
+  color: #555555;
+  font-size: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.campo label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555555;
+}
+.campo input {
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.mensaje-formulario {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #fdecea;
+  color: #c62828;
+  font-size: 14px;
+}
+.mensaje-formulario.oculto {
+  display: none;
+}
+
+.datos-sesion {
+  margin-bottom: 20px;
+}
+.datos-sesion p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+.datos-sesion p strong {
+  color: #555555;
+}
+
+button,
+a.boton {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2e7d32;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+button:hover,
+a.boton:hover {
+  background-color: #1f5722;
+}
+button.secundario,
+a.boton.secundario {
+  background-color: transparent;
+  color: #555555;
+  border: 1px solid #bbbbbb;
+}
+button.secundario:hover,
+a.boton.secundario:hover {
+  background-color: #eeeeee;
+}
