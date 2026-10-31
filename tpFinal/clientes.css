@@ -123,14 +123,25 @@ td {
 }
 
 #modal form {
-  width: 350px;
-  max-width: 90%;
+  width: 700px;
+  max-width: 92%;
   max-height: 90vh;
   overflow-y: auto;
   padding: 25px;
   background-color: #ffffff;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.grilla-campos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 20px;
+}
+@media (max-width: 600px) {
+  .grilla-campos {
+    grid-template-columns: 1fr;
+  }
 }
 
 .caja-confirmacion {
